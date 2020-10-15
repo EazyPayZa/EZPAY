@@ -28,7 +28,7 @@ SettingsBitToolWidget::SettingsBitToolWidget(PIVXGUI* _window, QWidget *parent) 
     this->setStyleSheet(parent->styleSheet());
 
     /* Containers */
-    setCssProperty(ui->left, "container");
+    setCssProperty(ui->left, "container-border");
     ui->left->setContentsMargins(10,10,10,10);
 
     /* Title */

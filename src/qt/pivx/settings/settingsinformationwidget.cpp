@@ -21,7 +21,7 @@ SettingsInformationWidget::SettingsInformationWidget(PIVXGUI* _window,QWidget *p
     this->setStyleSheet(parent->styleSheet());
 
     // Containers
-    setCssProperty(ui->left, "container");
+    setCssProperty(ui->left, "container-border");
     ui->left->setContentsMargins(10,10,10,10);
     setCssProperty({ ui->layoutOptions1, ui->layoutOptions2_1, ui->layoutOptions3 }, "container-options");
 

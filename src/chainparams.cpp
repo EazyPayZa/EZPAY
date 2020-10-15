@@ -103,7 +103,12 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 	(361000, uint256("4bdf6a60c74db685970fb78b6215795f948f067626979682364910851c437ae2"))
 	(361100, uint256("0fe582d00b7b9a87b126141820147e4f8eefe1e93ccf93692e492feb12c13bd7"))
 	(361200, uint256("9a9473047c2a9aa8fe4e37471100d58f10289d99395911ea17c2dff583778dac"))
-	(361300, uint256("053898697249856acd562c6a8ced3747493030672144957e72a76be72ef8e0f5"));
+	(361300, uint256("053898697249856acd562c6a8ced3747493030672144957e72a76be72ef8e0f5"))
+	(365000, uint256("e9ed6aa17fe00e11be9e0aa4316a8c26b1754cba8caaf78b4c2c35c9c222ea1a"))
+	(368000, uint256("857a5288bf2037d7c9664d3c673a4dfae9204124f61f519fbecba9f02948cdfe"))
+	(370000, uint256("29daee3ca222219058f1aa690943b701fb653e362106d2cf25a3d3062039c767"))
+	(372000, uint256("01f87ed9817f52ac935e5c9aee01665064fd31d5ae269c6fa6db0851c0e15e90"))
+	(373500, uint256("39f4ab1759caf219cb5da472387e9e97c3b87c68f4bcc9e327c791136762cc1c"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -184,7 +189,7 @@ public:
         consensus.height_ZC_RecalcAccumulators = disabled;
 
         // fork away from old chain at this height
-        consensus.height_new_client = 360000;
+        consensus.height_new_client = 380000;
 
         // validation by-pass
         consensus.nPivxBadBlockTime = disabled;

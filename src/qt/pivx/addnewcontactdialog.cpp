@@ -18,7 +18,7 @@ AddNewContactDialog::AddNewContactDialog(QWidget *parent) :
     ui->frame->setProperty("cssClass", "container-dialog");
     // Title
     ui->labelTitle->setText(tr("Edit Contact"));
-    ui->labelTitle->setProperty("cssClass", "text-title-dialog");
+    ui->labelTitle->setProperty("cssClass", "text-title2-dialog");
 
     ui->labelMessage->setText(tr("Set a label for the selected address"));
     ui->labelMessage->setProperty("cssClass", "text-main-grey");

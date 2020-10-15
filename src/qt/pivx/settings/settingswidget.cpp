@@ -31,8 +31,8 @@ SettingsWidget::SettingsWidget(PIVXGUI* parent) :
     this->setStyleSheet(parent->styleSheet());
 
     /* Containers */
-    setCssProperty(ui->scrollArea, "container");
-    setCssProperty(ui->left, "container");
+    setCssProperty(ui->scrollArea, "container-border");
+    setCssProperty(ui->left, "container-border");
     ui->left->setContentsMargins(0,20,0,20);
     setCssProperty(ui->right, "container-right");
     ui->right->setContentsMargins(20,10,20,20);

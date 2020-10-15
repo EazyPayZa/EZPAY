@@ -71,17 +71,19 @@ AddressesWidget::AddressesWidget(PIVXGUI* parent) :
     );
 
     /* Containers */
-    setCssProperty(ui->left, "container");
+    setCssProperty(ui->left, "container-border");
     ui->left->setContentsMargins(0,20,0,20);
     setCssProperty(ui->right, "container-right");
     ui->right->setContentsMargins(20,10,20,20);
-    setCssProperty(ui->listAddresses, "container");
+    setCssProperty(ui->listAddresses, "container-border");
 
-    // Title
-    ui->labelTitle->setText(tr("Contacts"));
+    /* Title */
+    ui->labelTitle->setText(tr("CONTACTS"));
+    setCssProperty(ui->labelTitle, "text-subtitle");
+
+    /* Subtitle */
     ui->labelSubtitle1->setText(tr("You can add a new one in the options menu to the side."));
-    setCssTitleScreen(ui->labelTitle);
-    setCssSubtitleScreen(ui->labelSubtitle1);
+    setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     // Change address option
     ui->btnAddContact->setTitleClassAndText("btn-title-grey", "Add new contact");
@@ -118,7 +120,7 @@ AddressesWidget::AddressesWidget(PIVXGUI* parent) :
     // Name
     ui->labelName->setText(tr("Contact name"));
     setCssProperty(ui->labelName, "text-title");
-    ui->lineEditName->setPlaceholderText(tr("e.g. John Doe"));
+    ui->lineEditName->setPlaceholderText(tr("e.g. Zariel de Lisarb"));
     setCssEditLine(ui->lineEditName, true);
 
     // Address

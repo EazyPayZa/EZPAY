@@ -21,7 +21,7 @@ DefaultDialog::DefaultDialog(QWidget *parent) :
 
     // Text
     ui->labelTitle->setText("Dialog Title");
-    ui->labelTitle->setProperty("cssClass", "text-title-dialog");
+    ui->labelTitle->setProperty("cssClass", "text-title2-dialog");
 
 
     ui->labelMessage->setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");

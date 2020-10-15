@@ -19,7 +19,7 @@ SendChangeAddressDialog::SendChangeAddressDialog(QWidget *parent) :
 
     // Text
     ui->labelTitle->setText(tr("Custom Change Address"));
-    ui->labelTitle->setProperty("cssClass", "text-title-dialog");
+    ui->labelTitle->setProperty("cssClass", "text-title2-dialog");
 
     ui->labelMessage->setText(tr("The remainder of the value resultant from the inputs minus the outputs value goes to the \"change\" EZPAY address"));
     ui->labelMessage->setProperty("cssClass", "text-main-grey");

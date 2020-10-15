@@ -23,7 +23,7 @@ ReceiveDialog::ReceiveDialog(QWidget *parent) :
     // Title
 
     ui->labelTitle->setText("My Address");
-    ui->labelTitle->setProperty("cssClass", "text-title-dialog");
+    ui->labelTitle->setProperty("cssClass", "text-subtitle");
 
     // Address
 

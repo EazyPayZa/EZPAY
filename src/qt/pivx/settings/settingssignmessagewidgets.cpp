@@ -28,7 +28,7 @@ SettingsSignMessageWidgets::SettingsSignMessageWidgets(PIVXGUI* _window, QWidget
     this->setStyleSheet(parent->styleSheet());
 
     // Containers
-    ui->left->setProperty("cssClass", "container");
+    ui->left->setProperty("cssClass", "container-border");
     ui->left->setContentsMargins(10,10,10,10);
 
     // Title

@@ -155,7 +155,7 @@
               </property>
               <property name="styleSheet">
                <string notr="true">
-																background-color:white;
+																background-color:transparent;
 																padding:0px;
 																border:none;
 															</string>
@@ -572,7 +572,7 @@
              </property>
              <property name="styleSheet">
               <string notr="true">
-															background-color:white;
+															background-color:transparent;
 															padding:0px;
 															border:none;
 														</string>

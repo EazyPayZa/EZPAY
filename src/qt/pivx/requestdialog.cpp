@@ -23,14 +23,14 @@ RequestDialog::RequestDialog(QWidget *parent) :
 
     // Text
     ui->labelTitle->setText(tr("New Payment Request"));
-    setCssProperty(ui->labelTitle, "text-title-dialog");
+    setCssProperty(ui->labelTitle, "text-title2-dialog");
 
     ui->labelMessage->setText(tr("Instead of sharing only a EZPAY address, you can create a payment request, bundling up more information."));
     setCssProperty(ui->labelMessage, "text-main-grey");
 
     // Combo Coins
     setCssProperty(ui->comboBoxCoin, "btn-combo-coins");
-    setCssProperty(ui->comboContainer, "container-purple");
+    setCssProperty(ui->comboContainer, "container-border");
 
     // Label
     ui->labelSubtitleLabel->setText(tr("Label"));

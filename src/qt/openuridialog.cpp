@@ -22,7 +22,7 @@ OpenURIDialog::OpenURIDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystem
     ui->labelSubtitle->setText("URI");
     setCssProperty(ui->labelSubtitle, "text-title2-dialog");
     setCssProperty(ui->frame, "container-dialog");
-    setCssProperty(ui->labelTitle, "text-title-dialog");
+    setCssProperty(ui->labelTitle, "text-title2-dialog");
 
     setCssBtnPrimary(ui->pushButtonOK);
     setCssBtnPrimary(ui->selectFileButton);

@@ -40,12 +40,12 @@ MasterNodeWizardDialog::MasterNodeWizardDialog(WalletModel *model, QWidget *pare
     ui->pushName4->setEnabled(false);
 
     // Frame 1
-    setCssProperty(ui->labelTitle1, "text-title-dialog");
+    setCssProperty(ui->labelTitle1, "text-title2-dialog");
     setCssProperty(ui->labelMessage1a, "text-main-grey");
     setCssProperty(ui->labelMessage1b, "text-main-purple");
 
     // Frame 3
-    setCssProperty(ui->labelTitle3, "text-title-dialog");
+    setCssProperty(ui->labelTitle3, "text-title2-dialog");
     setCssProperty(ui->labelMessage3, "text-main-grey");
 
     ui->lineEditName->setPlaceholderText(tr("e.g user_masternode"));
@@ -53,7 +53,7 @@ MasterNodeWizardDialog::MasterNodeWizardDialog(WalletModel *model, QWidget *pare
     ui->lineEditName->setValidator(new QRegExpValidator(QRegExp("^[A-Za-z0-9]+"), ui->lineEditName));
 
     // Frame 4
-    setCssProperty(ui->labelTitle4, "text-title-dialog");
+    setCssProperty(ui->labelTitle4, "text-title2-dialog");
     setCssProperty({ui->labelSubtitleIp, ui->labelSubtitlePort}, "text-title");
     setCssSubtitleScreen(ui->labelSubtitleAddressIp);
 

@@ -26,7 +26,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">#HelpMessageDialog {
-	background-color:#FFFFFF;
+	background-color:transparent;
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -61,7 +61,7 @@
      </property>
      <property name="styleSheet">
       <string notr="true">#helpContainer{
-	background-color:white;
+	background-color:#e7aa26;
 	padding:9px;
 }</string>
      </property>
@@ -115,8 +115,8 @@
           </property>
           <property name="styleSheet">
            <string notr="true">#helpMessage {
-background-color:#FFFFFF;
-	color:#707070;
+background-color: #e7aa26;
+	color:#f2f2f2;
 }</string>
           </property>
           <property name="readOnly">
@@ -128,7 +128,7 @@ background-color:#FFFFFF;
          <widget class="QScrollArea" name="scrollArea">
           <property name="styleSheet">
            <string notr="true">#scrollArea {
-background-color:#FFFFFF;
+background-color: transparent;
 }</string>
           </property>
           <property name="verticalScrollBarPolicy">
@@ -148,7 +148,7 @@ background-color:#FFFFFF;
            </property>
            <property name="styleSheet">
             <string notr="true">#scrollAreaWidgetContents {
-background-color:#FFFFFF;
+background-color: transparent;
 }</string>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -165,8 +165,8 @@ background-color:#FFFFFF;
               </property>
               <property name="styleSheet">
                <string notr="true">#aboutMessage {
-background-color:#FFFFFF;
-	color:#707070;
+background-color:#e7aa26;
+	color:#ffffff;
 }</string>
               </property>
               <property name="textFormat">

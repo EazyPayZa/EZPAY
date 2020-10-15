@@ -24,7 +24,7 @@ SendCustomFeeDialog::SendCustomFeeDialog(PIVXGUI *parent) :
     // Text
     ui->labelTitle->setText(tr("Customize Fee"));
     ui->labelMessage->setText(tr("Customize the transaction fee, depending on the fee value your transaction might be included faster in the blockchain."));
-    setCssProperty(ui->labelTitle, "text-title-dialog");
+    setCssProperty(ui->labelTitle, "text-title2-dialog");
     setCssProperty(ui->labelMessage, "text-main-grey");
 
     // Recommended

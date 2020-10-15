@@ -22,7 +22,7 @@ SettingsDisplayOptionsWidget::SettingsDisplayOptionsWidget(PIVXGUI* _window, QWi
     this->setStyleSheet(parent->styleSheet());
 
     // Containers
-    ui->left->setProperty("cssClass", "container");
+    ui->left->setProperty("cssClass", "container-border");
     ui->left->setContentsMargins(10,10,10,10);
 
     // Title

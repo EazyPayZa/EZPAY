@@ -19,26 +19,26 @@ static const int STATUSBAR_ICONSIZE = 16;
 static const bool DEFAULT_SPLASHSCREEN = true;
 
 /* Invalid field background style */
-#define STYLE_INVALID "background:#FF8080"
+#define STYLE_INVALID "background:#c03435"
 
 /* Transaction list -- unconfirmed transaction */
-#define COLOR_UNCONFIRMED QColor(91, 76, 134)
+#define COLOR_UNCONFIRMED QColor(242, 242, 242)
 /* Transaction list -- negative amount */
-#define COLOR_NEGATIVE QColor(206, 0, 188)
+#define COLOR_NEGATIVE QColor(192, 52, 53)
 /* Transaction list -- bare address (without label) */
 #define COLOR_BAREADDRESS QColor(140, 140, 140)
 /* Transaction list -- TX status decoration - open until date */
-#define COLOR_TX_STATUS_OPENUNTILDATE QColor(64, 64, 255)
+#define COLOR_TX_STATUS_OPENUNTILDATE QColor(10, 120,205)
 /* Transaction list -- TX status decoration - offline */
 #define COLOR_TX_STATUS_OFFLINE QColor(192, 192, 192)
 /* Transaction list -- TX status decoration - default color */
-#define COLOR_BLACK QColor(51, 51, 51)
+#define COLOR_BLACK QColor(0, 0, 0)
 /* Transaction list -- TX status decoration - conflicted */
 #define COLOR_CONFLICTED QColor(255, 0, 0)
 /* Transaction list -- TX status decoration - orphan (Light Gray #D3D3D3) */
 #define COLOR_ORPHAN QColor(211, 211, 211)
 /* Transaction list -- TX status decoration - stake (BlueViolet #8A2BE2) */
-#define COLOR_STAKE QColor(138,43,226)
+#define COLOR_STAKE QColor(10, 120,205)
 /* Tooltips longer than this (in characters) are converted into rich text,
    so that they can be word-wrapped.
  */
@@ -53,9 +53,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "EazyPayZa"
-#define QAPP_ORG_DOMAIN "eazypayzanetwork.io"
-#define QAPP_APP_NAME_DEFAULT "EazyPayZa-Qt"
-#define QAPP_APP_NAME_TESTNET "EazyPayZa-Qt-testnet"
+#define QAPP_ORG_NAME "Final Coin"
+#define QAPP_ORG_DOMAIN "Finalnetwork.io"
+#define QAPP_APP_NAME_DEFAULT "Final-Qt"
+#define QAPP_APP_NAME_TESTNET "Final-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

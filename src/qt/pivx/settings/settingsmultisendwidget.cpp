@@ -80,7 +80,7 @@ public:
                 row->setObjectName(QStringLiteral("multiSendrow"));
             row->resize(475, 65);
             row->setStyleSheet(QStringLiteral(""));
-            setCssProperty(row, "container");
+            setCssProperty(row, "container-border");
             verticalLayout_2 = new QVBoxLayout(row);
             verticalLayout_2->setSpacing(0);
             verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
@@ -154,7 +154,7 @@ SettingsMultisendWidget::SettingsMultisendWidget(PWidget *parent) :
     );
 
     // Containers
-    setCssProperty(ui->left, "container");
+    setCssProperty(ui->left, "container-border");
     ui->left->setContentsMargins(10,10,10,10);
 
     // Title
@@ -178,7 +178,7 @@ SettingsMultisendWidget::SettingsMultisendWidget(PWidget *parent) :
     ui->checkBoxStake->setText(tr("Send stakes"));
     ui->checkBoxRewards->setText(tr("Send masternode rewards"));
 
-    setCssProperty(ui->listView, "container");
+    setCssProperty(ui->listView, "container-border");
     ui->listView->setItemDelegate(delegate);
     ui->listView->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
     ui->listView->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));

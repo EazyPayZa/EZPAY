@@ -614,12 +614,12 @@ void RPCConsole::clear()
     // Set default style sheet
     ui->messagesWidget->document()->setDefaultStyleSheet(
         "table { }"
-        "td.time { color: #808080; padding-top: 3px; } "
+        "td.time { color: #fc7700; padding-top: 3px; } "
         "td.message { font-family: Courier, Courier New, Lucida Console, monospace; font-size: 12px; } " // Todo: Remove fixed font-size
-        "td.cmd-request { color: #006060; } "
+        "td.cmd-request { color: #282828; } "
         "td.cmd-error { color: red; } "
         ".secwarning { color: red; }"
-        "b { color: #006060; } ");
+        "b { color: #282828; } ");
 
 #ifdef Q_OS_MAC
     QString clsKey = "(⌘)-L";

@@ -31,9 +31,9 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     this->setStyleSheet(parent->styleSheet());
 
     /* Containers */
-    setCssProperty(ui->left, "container");
+    setCssProperty(ui->left, "container-border");
     ui->left->setContentsMargins(0,20,0,20);
-    setCssProperty(ui->right, "container-right");
+    setCssProperty(ui->right, "container-border");
     ui->right->setContentsMargins(20,10,20,20);
 
     /* Light Font */
@@ -41,9 +41,8 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     fontLight.setWeight(QFont::Light);
 
     /* Title */
-    ui->labelTitle->setText(tr("Send"));
-    setCssProperty(ui->labelTitle, "text-title-screen");
-    ui->labelTitle->setFont(fontLight);
+    ui->labelTitle->setText(tr("SEND"));
+    setCssProperty(ui->labelTitle, "text-subtitle");
 
     /* Subtitle */
     ui->labelSubtitle1->setText(tr("You can transfer EZPAY"));
@@ -59,6 +58,7 @@ SendWidget::SendWidget(PIVXGUI* parent) :
 
     /* Buttons */
     ui->pushButtonFee->setText(tr("Customize fee"));
+    setCssProperty(ui->pushButtonFee, "text-title");
     setCssBtnSecondary(ui->pushButtonFee);
 
     ui->pushButtonClear->setText(tr("Clear all"));

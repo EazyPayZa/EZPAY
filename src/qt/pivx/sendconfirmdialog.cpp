@@ -26,7 +26,7 @@ TxDetailDialog::TxDetailDialog(QWidget *parent, bool _isConfirmDialog, const QSt
 
     // Container
     setCssProperty(ui->frame, "container-dialog");
-    setCssProperty(ui->labelTitle, "text-title-dialog");
+    setCssProperty(ui->labelTitle, "text-title2-dialog");
 
     // Labels
     setCssProperty(ui->labelWarning, "text-title2-dialog");

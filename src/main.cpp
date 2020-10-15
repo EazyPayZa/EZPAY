@@ -5084,6 +5084,14 @@ bool static ProcessMessage(CNode* pfrom, std::string strCommand, CDataStream& vR
             vRecv >> LIMITED_STRING(pfrom->strSubVer, MAX_SUBVERSION_LENGTH);
             pfrom->cleanSubVer = SanitizeString(pfrom->strSubVer);
         }
+		if (pfrom->strSubVer == "/EazyPayZa Core:2.0.0.1/" || pfrom->strSubVer == "/EazyPayZa Core:1.4.0.0/" || pfrom->strSubVer == "/EazyPayZa Core:2.0.0.0/" || pfrom->strSubVer == "/EazyPayZa Core:1.4.0/" || pfrom->strSubVer == "/EazyPayZa Core:1.0.0.0/" || pfrom->strSubVer == "/EazyPayZa Core:2.0.0.1/" || pfrom->strSubVer == "/Ezpayza Core:2.0.0.2/" || pfrom->strSubVer == "/break/" || pfrom->strSubVer == "break") {
+		        // disconnect from peers other than these sub versions
+                LogPrintf("partner %s using obsolete version %s; banning and disconnecting\n", pfrom->addr.ToString().c_str(), pfrom->strSubVer.c_str());
+                //state->fShouldBan = true;
+                pfrom->fDisconnect = true;
+                return false;
+        }
+		
         if (!vRecv.empty())
             vRecv >> pfrom->nStartingHeight;
         if (!vRecv.empty())

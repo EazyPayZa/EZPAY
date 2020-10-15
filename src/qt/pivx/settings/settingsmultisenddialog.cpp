@@ -22,7 +22,7 @@ SettingsMultisendDialog::SettingsMultisendDialog(QWidget *parent) :
 
     // Text
     ui->labelTitle->setText(tr("New recipient for multisend"));
-    setCssProperty(ui->labelTitle, "text-title-dialog");
+    setCssProperty(ui->labelTitle, "text-title2-dialog");
 
     // Label
     ui->labelSubtitleLabel->setText(tr("Address Label (optional)"));

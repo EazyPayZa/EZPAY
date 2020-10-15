@@ -18,7 +18,7 @@ SettingsWalletOptionsWidget::SettingsWalletOptionsWidget(PIVXGUI* _window, QWidg
     this->setStyleSheet(parent->styleSheet());
 
     // Containers
-    ui->left->setProperty("cssClass", "container");
+    ui->left->setProperty("cssClass", "container-border");
     ui->left->setContentsMargins(10,10,10,10);
     ui->labelDivider->setProperty("cssClass", "container-divider");
 

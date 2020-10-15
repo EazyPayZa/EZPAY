@@ -21,7 +21,7 @@ AddNewAddressDialog::AddNewAddressDialog(QWidget *parent) :
     // Title
 
     ui->labelTitle->setText("New Address");
-    ui->labelTitle->setProperty("cssClass", "text-title-dialog");
+    ui->labelTitle->setProperty("cssClass", "text-title2-dialog");
 
     // Buttons
 

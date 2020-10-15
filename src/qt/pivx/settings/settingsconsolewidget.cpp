@@ -246,7 +246,7 @@ SettingsConsoleWidget::SettingsConsoleWidget(PIVXGUI* _window, QWidget *parent) 
     this->setStyleSheet(parent->styleSheet());
 
     // Containers
-    setCssProperty({ui->left, ui->messagesWidget}, "container");
+    setCssProperty({ui->left, ui->messagesWidget}, "container-border");
     ui->left->setContentsMargins(10,10,10,10);
 
     // Title
@@ -254,7 +254,7 @@ SettingsConsoleWidget::SettingsConsoleWidget(PIVXGUI* _window, QWidget *parent) 
     setCssTitleScreen(ui->labelTitle);
 
     // Console container
-    setCssProperty(ui->consoleWidget, "container-square");
+    setCssProperty(ui->consoleWidget, "container-purple");
     setShadow(ui->consoleWidget);
 
     // Edit
@@ -263,7 +263,7 @@ SettingsConsoleWidget::SettingsConsoleWidget(PIVXGUI* _window, QWidget *parent) 
 
     // Buttons
     ui->pushButton->setProperty("cssClass", "ic-arrow");
-    ui->pushButtonCommandOptions->setText(tr("Command Line Options "));
+    ui->pushButtonCommandOptions->setText(tr("Command Line Options"));
     ui->pushButtonOpenDebug->setText(tr("Open Debug File"));
     setCssBtnSecondary(ui->pushButtonOpenDebug);
     setCssBtnSecondary(ui->pushButtonClear);
@@ -515,22 +515,22 @@ void SettingsConsoleWidget::changeTheme(bool isLightTheme, QString &theme)
     // Set default style sheet
     if (isLightTheme) {
         ui->messagesWidget->document()->setDefaultStyleSheet(
-                "table { color: #707070;  }"
-                "td.time { color: #808080; padding-top: 3px; } "
-                "td.message { color: #707070;font-family: Courier, Courier New, Lucida Console, monospace; font-size: 12px; } " // Todo: Remove fixed font-size
-                "td.cmd-request { color: #006060; } "
-                "td.cmd-error { color: red; } "
-                ".secwarning { color: red; }"
-                "b { color: #707070; } ");
+                "table { color: #f2f2f2;  }"
+                "td.time { color: #e7aa26; padding-top: 3px; } "
+                "td.message { color: #f2f2f2;font-family: Courier, Courier New, Lucida Console, monospace; font-size: 12px; } " // Todo: Remove fixed font-size
+                "td.cmd-request { color: #e7aa26; } "
+                "td.cmd-error { color: #ff4949; } "
+                ".secwarning { color: #ff4949; }"
+                "b { color: #f2f2f2; } ");
     } else {
         ui->messagesWidget->document()->setDefaultStyleSheet(
-                "table { color: #FFFFFF; }"
-                "td.time { color: #808080; padding-top: 3px; } "
-                "td.message { color: #FFFFFF;font-family: Courier, Courier New, Lucida Console, monospace; font-size: 12px; } " // Todo: Remove fixed font-size
-                "td.cmd-request { color: #006060; } "
-                "td.cmd-error { color: red; } "
-                ".secwarning { color: red; }"
-                "b { color: #FFFFFF; } ");
+                "table { color: #282828; }"
+                "td.time { color: #e7aa26; padding-top: 3px; } "
+                "td.message { color: #282828;font-family: Courier, Courier New, Lucida Console, monospace; font-size: 12px; } " // Todo: Remove fixed font-size
+                "td.cmd-request { color: #e7aa26; } "
+                "td.cmd-error { color: #ff4949; } "
+                ".secwarning { color: #ff4949; }"
+                "b { color: #282828; } ");
     }
     updateStyle(ui->messagesWidget);
 }

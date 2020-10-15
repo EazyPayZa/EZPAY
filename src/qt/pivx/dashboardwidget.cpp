@@ -40,15 +40,16 @@ DashboardWidget::DashboardWidget(PIVXGUI* parent) :
     this->setContentsMargins(0,0,0,0);
 
     // Containers
-    setCssProperty({this, ui->left}, "container");
+    setCssProperty({this, ui->left}, "container-border");
     ui->left->setContentsMargins(0,0,0,0);
     setCssProperty(ui->right, "container-right");
     ui->right->setContentsMargins(20,20,20,0);
 
-    // Title
+    /* Title */
+    ui->labelTitle->setText(tr("Transactions"));
+    setCssProperty(ui->labelTitle, "text-subtitle");
     ui->labelTitle2->setText(tr("Staking & Masternode Rewards"));
-    setCssTitleScreen(ui->labelTitle);
-    setCssTitleScreen(ui->labelTitle2);
+    setCssProperty(ui->labelTitle2, "text-subtitle");
 
     /* Subtitle */
     ui->labelSubtitle->setText(tr("You can view your account's history"));
@@ -110,7 +111,7 @@ DashboardWidget::DashboardWidget(PIVXGUI* parent) :
         this, &DashboardWidget::onSortTypeChanged);
 
     // Transactions
-    setCssProperty(ui->listTransactions, "container");
+    setCssProperty(ui->listTransactions, "container-border");
     ui->listTransactions->setItemDelegate(txViewDelegate);
     ui->listTransactions->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
     ui->listTransactions->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));
@@ -444,14 +445,15 @@ void DashboardWidget::changeChartColors(){
     QColor backgroundColor;
     QColor gridY;
     if (isLightTheme()) {
-        gridLineColorX = QColor(241, 242, 242);
+        gridY = QColor("#ff0078");
+        gridLineColorX = QColor("#ffffff");
         linePenColorY = gridLineColorX;
         backgroundColor = linePenColorY;
-        axisY->setGridLineColor(QColor("#1a000000"));
+        axisY->setGridLineColor(QColor("#e7aa26"));
     } else {
-        gridY = QColor("#40ffffff");
+        gridY = QColor("#ffffff");
         axisY->setGridLineColor(gridY);
-        gridLineColorX = QColor(17, 17, 17);
+        gridLineColorX = QColor("#e7aa26");
         linePenColorY =  gridLineColorX;
         backgroundColor = linePenColorY;
     }
@@ -644,8 +646,8 @@ void DashboardWidget::onChartRefreshed()
     // init sets
     set0 = new QBarSet("EZPAY");
 	set1 = new QBarSet("EZPAY MN Rewards");
-    set0->setColor(QColor(92,75,125));
-	set1->setColor(QColor(176,136,255));
+    set0->setColor(QColor(231, 170, 38));
+	set1->setColor(QColor(255, 203, 89));
 
     if (!series) {
         series = new QBarSeries();

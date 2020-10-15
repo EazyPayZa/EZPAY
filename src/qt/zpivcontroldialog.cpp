@@ -36,7 +36,7 @@ ZPivControlDialog::ZPivControlDialog(QWidget *parent) :
 
     // Title
     ui->labelTitle->setText(tr("Select zEZPAY Denominations to Spend"));
-    ui->labelTitle->setProperty("cssClass", "text-title-dialog");
+    ui->labelTitle->setProperty("cssClass", "text-title2-dialog");
 
 
     // Label Style

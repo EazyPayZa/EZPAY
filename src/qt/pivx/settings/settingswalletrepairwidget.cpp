@@ -14,9 +14,9 @@ SettingsWalletRepairWidget::SettingsWalletRepairWidget(PIVXGUI* _window, QWidget
     this->setStyleSheet(parent->styleSheet());
 
     // Containers
-    ui->left->setProperty("cssClass", "container");
+    ui->left->setProperty("cssClass", "container-border");
     ui->left->setContentsMargins(10,10,10,10);
-    ui->scrollStack->setProperty("cssClass", "container");
+    ui->scrollStack->setProperty("cssClass", "container-border");
 
     // Title
     ui->labelTitle->setText(tr("Wallet Repair"));

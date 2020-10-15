@@ -237,11 +237,11 @@ void Intro::setStatus(int status, const QString& message, quint64 bytesAvailable
         QString freeString = tr("%1 GB of free space available").arg(bytesAvailable / GB_BYTES);
         if (bytesAvailable < BLOCK_CHAIN_SIZE) {
             freeString += " " + tr("(of %1 GB needed)").arg(BLOCK_CHAIN_SIZE / GB_BYTES);
-            ui->freeSpace->setStyleSheet("QLabel { color: #800000 }");
+            ui->freeSpace->setStyleSheet("QLabel { color: #ffffff }");
         } else {
             ui->freeSpace->setStyleSheet("");
         }
-        ui->freeSpace->setStyleSheet("QLabel { color: #000000 }");
+        ui->freeSpace->setStyleSheet("QLabel { color: #ffffff }");
         ui->freeSpace->setText(freeString + ".");
     }
     /* Don't allow confirm in ERROR state */

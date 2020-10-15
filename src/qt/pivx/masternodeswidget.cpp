@@ -83,7 +83,7 @@ MasterNodesWidget::MasterNodesWidget(PIVXGUI *parent) :
     this->setStyleSheet(parent->styleSheet());
 
     /* Containers */
-    setCssProperty(ui->left, "container");
+    setCssProperty(ui->left, "container-border");
     ui->left->setContentsMargins(0,20,0,20);
 
     /* Light Font */
@@ -92,11 +92,11 @@ MasterNodesWidget::MasterNodesWidget(PIVXGUI *parent) :
 
     /* Title */
     ui->labelTitle->setText(tr("Masternodes"));
-    setCssTitleScreen(ui->labelTitle);
-    ui->labelTitle->setFont(fontLight);
+    setCssProperty(ui->labelTitle, "text-subtitle");
 
+    /* Subtitle */
     ui->labelSubtitle1->setText(tr("Full nodes that incentivize node operators to perform the core consensus functions\nand vote on the treasury system receiving a periodic reward."));
-    setCssSubtitleScreen(ui->labelSubtitle1);
+    setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     /* Buttons */
     ui->pushButtonSave->setText(tr("Create Masternode Controller"));
@@ -104,7 +104,7 @@ MasterNodesWidget::MasterNodesWidget(PIVXGUI *parent) :
     setCssBtnPrimary(ui->pushButtonStartAll);
     setCssBtnPrimary(ui->pushButtonStartMissing);
 
-    setCssProperty(ui->listMn, "container");
+    setCssProperty(ui->listMn, "container-border");
     ui->listMn->setItemDelegate(delegate);
     ui->listMn->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
     ui->listMn->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));

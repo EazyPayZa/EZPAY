@@ -35,16 +35,18 @@ ReceiveWidget::ReceiveWidget(PIVXGUI* parent) :
                 );
 
     // Containers
-    setCssProperty(ui->left, "container");
+    setCssProperty(ui->left, "container-border");
     ui->left->setContentsMargins(20,20,20,20);
-    setCssProperty(ui->right, "container-right");
+    setCssProperty(ui->right, "container-border");
     ui->right->setContentsMargins(0,9,0,0);
 
-    // Title
-    ui->labelTitle->setText(tr("Receive"));
+    /* Title */
+    ui->labelTitle->setText(tr("RECEIVE"));
+    setCssProperty(ui->labelTitle, "text-subtitle");
+
+    /* Subtitle */
     ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive EZPAY."));
-    setCssTitleScreen(ui->labelTitle);
-    setCssSubtitleScreen(ui->labelSubtitle1);
+    setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     // Address
     ui->labelAddress->setText(tr("No address "));
@@ -78,7 +80,7 @@ ReceiveWidget::ReceiveWidget(PIVXGUI* parent) :
     setCssProperty(ui->pushButtonCopy, "btn-secundary-copy");
 
     // List Addresses
-    setCssProperty(ui->listViewAddress, "container");
+    setCssProperty(ui->listViewAddress, "container-border");
     ui->listViewAddress->setItemDelegate(delegate);
     ui->listViewAddress->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
     ui->listViewAddress->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));
@@ -182,7 +184,7 @@ void ReceiveWidget::updateQr(QString address)
     ui->labelQrImg->setText("");
 
     QString error;
-    QColor qrColor("#382d4d");
+    QColor qrColor("#000000");
     QPixmap pixmap = encodeToQr(uri, error, qrColor);
     if (!pixmap.isNull()) {
         qrImage = &pixmap;

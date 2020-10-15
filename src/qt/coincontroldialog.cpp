@@ -64,7 +64,7 @@ CoinControlDialog::CoinControlDialog(QWidget* parent, bool fMultisigEnabled) : Q
                     }, "container-border-purple");
 
     // Title
-    ui->labelTitle->setProperty("cssClass", "text-title-dialog");
+    ui->labelTitle->setProperty("cssClass", "text-title2-dialog");
 
     // Label Style
     setCssProperty({ui->labelCoinControlAfterFeeText,
