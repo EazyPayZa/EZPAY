@@ -220,12 +220,14 @@ public:
         pchMessageStart[2] = 0x44;
         pchMessageStart[3] = 0x4c;
         nDefaultPort = 11771;
-	   vSeeds.push_back(CDNSSeedData("1", "107.150.59.18"));     //Team 
-	   vSeeds.push_back(CDNSSeedData("2", "136.244.65.132"));     //Team 
-	   vSeeds.push_back(CDNSSeedData("3", "78.141.203.14"));     //Team 
-	   vSeeds.push_back(CDNSSeedData("4", "78.141.200.125"));     //Team 
-	   vSeeds.push_back(CDNSSeedData("5", "78.141.243.147"));     //Team 
-	   vSeeds.push_back(CDNSSeedData("6", "192.248.165.236"));     //Team 
+	   vSeeds.push_back(CDNSSeedData("107.150.59.18", "107.150.59.18"));     //Team 
+	   vSeeds.push_back(CDNSSeedData("136.244.65.132", "136.244.65.132"));     //Team 
+	   vSeeds.push_back(CDNSSeedData("78.141.203.14", "78.141.203.14"));     //Team 
+	   vSeeds.push_back(CDNSSeedData("78.141.200.125", "78.141.200.125"));     //Team 
+	   vSeeds.push_back(CDNSSeedData("78.141.243.147", "78.141.243.147"));     //Team 
+	   vSeeds.push_back(CDNSSeedData("192.248.165.236", "192.248.165.236"));     //Team 
+	   vSeeds.push_back(CDNSSeedData("45.32.238.189", "45.32.238.189"));     //Team 
+	   vSeeds.push_back(CDNSSeedData("199.247.19.207", "199.247.19.207"));     //Team 
 
 
 
